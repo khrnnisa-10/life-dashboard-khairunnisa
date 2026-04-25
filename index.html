@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1 id="time"></h1>
+  <p id="date"></p>
+  <h2 id="greeting">Good Morning</h2>
+
+  <button onclick="toggleMode()">Mode</button>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- TIMER -->
+  <div class="card">
+    <h3>Focus Timer</h3>
+    <h1 id="timer">25:00</h1>
+    <div>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="stopTimer()">Stop</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+
+  <!-- TASK -->
+  <div class="card">
+    <h3>Tasks</h3>
+
+    <div class="task-input">
+      <input id="taskInput" placeholder="Add a new task...">
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+</div>
+
+<!-- QUICK LINKS -->
+<div class="card quick">
+
+  <h3>Quick Links</h3>
+
+  <div class="link-input">
+    <input id="linkName" placeholder="Link name">
+    <input id="linkURL" placeholder="URL">
+    <button onclick="addLink()">Add Link</button>
+  </div>
+
+  <!-- LIST LINK DARI USER -->
+  <div id="linkList"></div>
+
+  <!-- DEFAULT BUTTON (BIRU) -->
+  <div class="default-links">
+    <a href="https://google.com" target="_blank">Google</a>
+    <a href="https://gmail.com" target="_blank">Gmail</a>
+    <a href="https://calendar.google.com" target="_blank">Calendar</a>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

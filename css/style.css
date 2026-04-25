@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #5f6af2, #7b4bff);
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  background: white;
+  margin: 30px auto;
+  padding: 25px;
+  width: 80%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* LAYOUT */
+.main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+/* CARD (KOTAK PUTIH) */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* QUICK LINK FULL WIDTH */
+.quick {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* INPUT */
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 60%;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #5f6af2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4b55d1;
+}
+
+/* TASK LIST */
+li {
+  list-style: none;
+  background: #f5f5f5;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* QUICK LINKS */
+.default-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.default-links a {
+  text-decoration: none;
+  background: #5f6af2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.default-links a:hover {
+  background: #4b55d1;
+}
+
+/* LINK LIST DARI USER */
+#linkList a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  background: #7b4bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#taskList button {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.dark {
+  background: #111 !important;
+  color: white !important;
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+.dark input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
